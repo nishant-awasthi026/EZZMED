@@ -64,9 +64,9 @@ const Navigation = () => {
                 </a>
               ))}
               <div className="px-4">
-                <Button variant="default" className="w-full">
+                {/*  <Button variant="default" className="w-full">
                   Get Started
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
