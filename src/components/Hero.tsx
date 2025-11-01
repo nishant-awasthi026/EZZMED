@@ -48,6 +48,13 @@ const Hero = () => {
     }
   };
 
+  const handleExploreSolutions = () => {
+    const solutionsSection = document.getElementById('solutions');
+    if (solutionsSection) {
+      solutionsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <section id="home" className="pt-32 pb-20 px-4">
       <div className="container mx-auto">
@@ -62,7 +69,7 @@ const Hero = () => {
               Secure, efficient, and seamlessly connected.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="text-base font-poppins">
+              <Button size="lg" className="text-base font-poppins" onClick={handleExploreSolutions}>
                 Explore Solutions <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               {/* <Button size="lg" variant="outline" className="text-base font-poppins">
