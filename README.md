@@ -1,73 +1,193 @@
-# Welcome to your Lovable project
+# EzzMed Insight Health
 
-## Project info
+A modern healthcare technology company website showcasing AI-driven healthcare management solutions for hospitals. EzzMed empowers healthcare facilities with intelligent, secure, and efficient hospital management systems.
 
-**URL**: https://lovable.dev/projects/d80397c3-3461-4bc5-b4ae-12aae9587e09
+## 🎯 About
 
-## How can I edit this code?
+EzzMed is a healthcare technology platform that democratizes access to cutting-edge healthcare technology, making advanced hospital management systems accessible to healthcare facilities of all sizes across India.
 
-There are several ways of editing your application.
+**Mission**: To democratize access to cutting-edge healthcare technology, making advanced hospital management systems accessible to healthcare facilities of all sizes across India.
 
-**Use Lovable**
+**Vision**: To become India's leading healthcare technology platform, connecting every hospital, clinic, and patient through intelligent, secure, and efficient systems.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d80397c3-3461-4bc5-b4ae-12aae9587e09) and start prompting.
+## ✨ Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Modern Landing Page** with comprehensive sections:
+  - Hero section with contact form
+  - Why EzzMed
+  - About Us
+  - Solutions showcase
+  - Technology overview
+  - Impact metrics
+  - Team profiles
+  - Investors section
+  - Contact form
+  
+- **Contact Form Integration** with Supabase backend
+- **WhatsApp Integration** for direct communication
+- **Responsive Design** optimized for all devices
+- **Modern UI Components** built with shadcn/ui
+- **Fast Performance** with Vite build tool
 
-**Use your preferred IDE**
+## 🚀 Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Framework**: React 18.3
+- **Language**: TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui (Radix UI primitives)
+- **Routing**: React Router DOM
+- **Backend**: Supabase
+- **State Management**: TanStack Query (React Query)
+- **Form Handling**: React Hook Form with Zod validation
+- **Icons**: Lucide React
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📋 Prerequisites
 
-Follow these steps:
+Before you begin, ensure you have the following installed:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Node.js** (v18 or higher) - [Download Node.js](https://nodejs.org/)
+- **npm** or **yarn** or **bun** package manager
+- **Git**
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🔧 Installation
 
-# Step 3: Install the necessary dependencies.
-npm i
+1. **Clone the repository**
+   ```bash
+   git clone <your-repository-url>
+   cd ezzmed-insight-health-main
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   bun install
+   ```
+
+3. **Set up environment variables**
+   
+   Create a `.env` file in the root directory with your Supabase credentials:
+   ```env
+   VITE_SUPABASE_URL=your_supabase_url
+   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
+
+4. **Start the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   bun dev
+   ```
+
+   The application will be available at `http://localhost:8080`
+
+## 📜 Available Scripts
+
+- `npm run dev` - Start development server with hot reload
+- `npm run build` - Build for production
+- `npm run build:dev` - Build for development mode
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint to check code quality
+
+## 🏗️ Project Structure
+
+```
+ezzmed-insight-health-main/
+├── public/                 # Static assets
+├── src/
+│   ├── assets/            # Images and other assets
+│   ├── components/        # React components
+│   │   ├── ui/           # shadcn/ui components
+│   │   ├── About.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Impact.tsx
+│   │   ├── Investors.tsx
+│   │   ├── Navigation.tsx
+│   │   ├── Solutions.tsx
+│   │   ├── Team.tsx
+│   │   ├── Technology.tsx
+│   │   ├── WhatsAppButton.tsx
+│   │   └── WhyEzzMed.tsx
+│   ├── hooks/            # Custom React hooks
+│   ├── integrations/     # Third-party integrations
+│   │   └── supabase/     # Supabase client setup
+│   ├── lib/             # Utility functions
+│   ├── pages/           # Page components
+│   ├── App.tsx          # Main application component
+│   ├── main.tsx         # Application entry point
+│   └── index.css        # Global styles
+├── supabase/            # Supabase configuration
+│   └── functions/       # Edge functions
+├── package.json
+├── vite.config.ts      # Vite configuration
+├── tailwind.config.ts  # Tailwind CSS configuration
+└── tsconfig.json       # TypeScript configuration
 ```
 
-**Edit a file directly in GitHub**
+## 🌐 Deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Building for Production
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+This creates an optimized production build in the `dist` directory.
 
-## What technologies are used for this project?
+### Deploy to Vercel
 
-This project is built with:
+1. Push your code to GitHub
+2. Import your repository on [Vercel](https://vercel.com)
+3. Add your environment variables
+4. Deploy!
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Deploy to Netlify
 
-## How can I deploy this project?
+1. Push your code to GitHub
+2. Import your repository on [Netlify](https://netlify.com)
+3. Set build command: `npm run build`
+4. Set publish directory: `dist`
+5. Add your environment variables
+6. Deploy!
 
-Simply open [Lovable](https://lovable.dev/projects/d80397c3-3461-4bc5-b4ae-12aae9587e09) and click on Share -> Publish.
+## 🔒 Environment Variables
 
-## Can I connect a custom domain to my Lovable project?
+Make sure to set up the following environment variables:
 
-Yes, you can!
+- `VITE_SUPABASE_URL` - Your Supabase project URL
+- `VITE_SUPABASE_ANON_KEY` - Your Supabase anonymous key
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🤝 Contributing
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is private and proprietary.
+
+## 👥 Founders
+
+- **Aman Raj**
+- **Shwetaang Shekhar**
+- **Om Purushottam**
+
+## 📞 Contact
+
+For inquiries, please use the contact form on the website or reach out via WhatsApp.
+
+---
+
+Built with ❤️ by the EzzMed team
